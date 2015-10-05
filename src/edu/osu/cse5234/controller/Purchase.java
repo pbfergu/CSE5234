@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import edu.osu.cse5234.model.Item;
 import edu.osu.cse5234.model.Order;
 import edu.osu.cse5234.model.PaymentInfo;
+import edu.osu.cse5234.model.ShippingInfo;
 
 @Controller
 @RequestMapping("/purchase")
@@ -72,6 +73,20 @@ public class Purchase {
 	public String viewPaymentEntryPage(HttpServletRequest request, HttpServletResponse response) {
 		request.setAttribute("payment", new PaymentInfo());	
 		return "PaymentEntryForm";
+	}
+	
+	@RequestMapping(path = "/shippingEntry", method = RequestMethod.GET)
+	public String viewShippingEntryPage(HttpServletRequest request, HttpServletResponse response) {
+		ShippingInfo temp = new ShippingInfo();
+		temp.setName("aaaa");
+		request.setAttribute("shippingInfo", temp);	
+		return "ShippingEntryForm";
+	}
+	
+	@RequestMapping(path = "/submitShipping", method = RequestMethod.POST)
+	public String submitShipping(@ModelAttribute("shippingInfo") ShippingInfo shippingInfo, HttpServletRequest request) {
+		request.getSession().setAttribute("shippingInfo", shippingInfo);
+		return "redirect:/purchase/viewOrder";
 	}
 
 }
