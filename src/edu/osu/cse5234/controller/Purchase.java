@@ -75,6 +75,12 @@ public class Purchase {
 		return "PaymentEntryForm";
 	}
 	
+	@RequestMapping(path = "/submitPayment", method = RequestMethod.POST)
+	public String submmitPayment(@ModelAttribute("payment") PaymentInfo paymentInfo, HttpServletRequest request) {
+		request.getSession().setAttribute("payment", paymentInfo);	
+		return "redirect:/purchase/shippingEntry";
+	}
+	
 	@RequestMapping(path = "/shippingEntry", method = RequestMethod.GET)
 	public String viewShippingEntryPage(HttpServletRequest request, HttpServletResponse response) {
 		ShippingInfo temp = new ShippingInfo();
