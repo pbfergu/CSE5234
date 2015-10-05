@@ -83,9 +83,7 @@ public class Purchase {
 	
 	@RequestMapping(path = "/shippingEntry", method = RequestMethod.GET)
 	public String viewShippingEntryPage(HttpServletRequest request, HttpServletResponse response) {
-		ShippingInfo temp = new ShippingInfo();
-		temp.setName("aaaa");
-		request.setAttribute("shippingInfo", temp);	
+		request.setAttribute("shippingInfo", new ShippingInfo());	
 		return "ShippingEntryForm";
 	}
 	
@@ -97,10 +95,17 @@ public class Purchase {
 	
 	@RequestMapping(path = "/viewOrder", method = RequestMethod.GET)
 	public String viewOrder(HttpServletRequest request, HttpServletResponse response) {
-		ShippingInfo temp = new ShippingInfo();
-		temp.setName("aaaa");
-		request.setAttribute("shippingInfo", temp);	
-		return "ShippingEntryForm";
+		request.setAttribute("order", request.getSession().getAttribute("order"));	
+		return "ViewOrder";
 	}
 
+	@RequestMapping(path = "/confirmOrder", method = RequestMethod.POST)
+	public String confirmOrder(@ModelAttribute("shippingInfo") ShippingInfo shippingInfo, HttpServletRequest request) {
+		return "redirect:/purchase/Confirmation";
+	}
+	
+	@RequestMapping(path = "/Confirmation", method = RequestMethod.GET)
+	public String viewConfirmation(HttpServletRequest request, HttpServletResponse response) {
+		return "Confirmation";
+	}
 }
