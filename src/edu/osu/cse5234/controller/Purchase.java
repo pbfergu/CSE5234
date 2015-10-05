@@ -74,4 +74,8 @@ public class Purchase {
 		return "PaymentEntryForm";
 	}
 
+	@RequestMapping(path = "/viewOrder", method = RequestMethod.GET)
+	public String viewOrder(HttpServletRequest request, HttpServletResponse response) {
+		return "ViewOrder";
+	}
 }
