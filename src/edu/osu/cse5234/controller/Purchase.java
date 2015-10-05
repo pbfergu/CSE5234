@@ -88,5 +88,13 @@ public class Purchase {
 		request.getSession().setAttribute("shippingInfo", shippingInfo);
 		return "redirect:/purchase/viewOrder";
 	}
+	
+	@RequestMapping(path = "/viewOrder", method = RequestMethod.GET)
+	public String viewOrder(HttpServletRequest request, HttpServletResponse response) {
+		ShippingInfo temp = new ShippingInfo();
+		temp.setName("aaaa");
+		request.setAttribute("shippingInfo", temp);	
+		return "ShippingEntryForm";
+	}
 
 }
