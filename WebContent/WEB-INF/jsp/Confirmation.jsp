@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<h3>Thank you for your purchase!</h3>
 </body>
 </html>
