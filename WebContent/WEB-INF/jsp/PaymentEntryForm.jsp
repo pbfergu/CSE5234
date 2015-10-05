@@ -9,7 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form:form method="post" action="purchase/submitPayment" modelAttribute="payment">
+<form:form method="post" action="submitPayment" modelAttribute="payment">
 	<table>
 	<tr>
 		<th>No.</th>
