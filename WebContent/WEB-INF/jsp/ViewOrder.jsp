@@ -21,7 +21,7 @@
 		<tr>
 			<td align="center">${status.count}</td>
 			<td><form:hidden path="itemList[${status.index}].name"/>${item.name}</td>
-			<td><form:input path="itemList[${status.index}].quantity" value="${item.quantity}"/></td>
+			<td><form:input readonly="true" path="itemList[${status.index}].quantity" value="${item.quantity}"/></td>
 		</tr>
 	</c:forEach>
 </table>
@@ -31,19 +31,19 @@
 <table>
 	<tr>
 		<td>Credit Card Number</td>
-		<td><form:input path="creditCardNumber" /></td>
+		<td><form:input readonly="true" path="creditCardNumber" /></td>
 	</tr>
 	<tr>
 		<td>Expiration Date</td>
-		<td><form:input path="expDate" /></td>
+		<td><form:input readonly="true" path="expDate" /></td>
 	</tr>
 	<tr>
 		<td>CVV Code</td>
-		<td><form:input path="cvvCode" /></td>
+		<td><form:input readonly="true" path="cvvCode" /></td>
 	</tr>
 	<tr>
 		<td>Card Holder Name</td>
-		<td><form:input path="cardHolderName" /></td>
+		<td><form:input readonly="true" path="cardHolderName" /></td>
 	</tr>
 </table>
 </form:form>
@@ -52,27 +52,27 @@
 <table>
 	<tr>
 		<td>Name</td>
-		<td><form:input path="name" value="${shippingInfo.name}"/></td>
+		<td><form:input readonly="true" path="name" value="${shippingInfo.name}"/></td>
 	</tr>
 	<tr>
 		<td>Address Line1</td>
-		<td><form:input path="addressLine1" value="${shippingInfo.addressLine1}"/></td>
+		<td><form:input readonly="true" path="addressLine1" value="${shippingInfo.addressLine1}"/></td>
 	</tr>
 	<tr>
 		<td>Address Line2</td>
-		<td><form:input path="addressLine2" value="${shippingInfo.addressLine2}"/></td>
+		<td><form:input readonly="true" path="addressLine2" value="${shippingInfo.addressLine2}"/></td>
 	</tr>
 	<tr>
 		<td>City</td>
-		<td><form:input path="city" value="${shippingInfo.city}"/></td>
+		<td><form:input readonly="true" path="city" value="${shippingInfo.city}"/></td>
 	</tr>
 	<tr>
 		<td>State</td>
-		<td><form:input path="state" value="${shippingInfo.state}"/></td>
+		<td><form:input readonly="true" path="state" value="${shippingInfo.state}"/></td>
 	</tr>
 	<tr>
 		<td>Zip</td>
-		<td><form:input path="zip" value="${shippingInfo.zip}"/></td>
+		<td><form:input readonly="true" path="zip" value="${shippingInfo.zip}"/></td>
 	</tr>
 </table>
 <input type="submit" value="Confirm" />
