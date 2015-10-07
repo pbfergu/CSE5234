@@ -24,7 +24,8 @@
 			<td><form:input path="itemList[${status.index}].quantity" value="${item.quantity}"/></td>
 		</tr>
 	</c:forEach>
-</table>	
+</table>
+	
 <br/>
 <input type="submit" value="Submit" />
 	
