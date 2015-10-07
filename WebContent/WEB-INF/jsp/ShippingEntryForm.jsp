@@ -6,18 +6,39 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Shipping Infomation</title>
 </head>
 <body>
 <body>
 <form:form method="post" action="submitShipping" modelAttribute="shippingInfo">
-<p>Name: <form:input path="name" value="${shippingInfo.name}"/></p>
-<p>Address Line 1: <form:input path="addressLine1" value="${shippingInfo.addressLine1}"/></p>
-<p>Address Line 2: <form:input path="addressLine2" value="${shippingInfo.addressLine2}"/></p>
-<p>City: <form:input path="city" value="${shippingInfo.city}"/></p>
-<p>State: <form:input path="state" value="${shippingInfo.state}"/></p>
-<p>Zip: <form:input path="zip" value="${shippingInfo.zip}"/></p>
-
+<table>
+		<br>
+		Please Input Your Shipping Infomation
+		<tr>
+			<td>Name</td>
+			<td><form:input path="name" value="${shippingInfo.name}"/></td>
+		</tr>
+		<tr>
+			<td>Address Line1</td>
+			<td><form:input path="addressLine1" value="${shippingInfo.addressLine1}"/></td>
+		</tr>
+		<tr>
+			<td>Address Line2</td>
+			<td><form:input path="addressLine2" value="${shippingInfo.addressLine2}"/></td>
+		</tr>
+		<tr>
+			<td>City</td>
+			<td><form:input path="city" value="${shippingInfo.city}"/></td>
+		</tr>
+		<tr>
+			<td>State</td>
+			<td><form:input path="state" value="${shippingInfo.state}"/></td>
+		</tr>
+		<tr>
+			<td>Zip</td>
+			<td><form:input path="zip" value="${shippingInfo.zip}"/></td>
+		</tr>
+	</table>		
 <br/>
 <input type="submit" value="Submit" />
 	

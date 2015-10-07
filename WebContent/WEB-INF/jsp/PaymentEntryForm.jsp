@@ -25,7 +25,8 @@
 	</c:forEach>
 </table>
 	<table>
-	
+		<br>
+		Please Input Your Payment Infomation
 		<tr>
 			<td>Credit Card Number</td>
 			<td><form:input path="creditCardNumber" /></td>
