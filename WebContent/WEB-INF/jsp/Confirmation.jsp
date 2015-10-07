@@ -8,5 +8,7 @@
 </head>
 <body>
 <h3>Thank you for your purchase!</h3>
+<p>Your confirmation number is <%= (int) (10000 * Math.random()) %>
+<p>Your order will be shipped soon</p>
 </body>
 </html>

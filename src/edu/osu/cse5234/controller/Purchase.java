@@ -95,7 +95,9 @@ public class Purchase {
 	
 	@RequestMapping(path = "/viewOrder", method = RequestMethod.GET)
 	public String viewOrder(HttpServletRequest request, HttpServletResponse response) {
-		request.setAttribute("order", request.getSession().getAttribute("order"));	
+		request.setAttribute("order", request.getSession().getAttribute("order"));
+		request.setAttribute("payment", request.getSession().getAttribute("payment"));
+		request.setAttribute("shippingInfo", request.getSession().getAttribute("shippingInfo"));
 		return "ViewOrder";
 	}
 
