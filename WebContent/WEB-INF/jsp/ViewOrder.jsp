@@ -10,7 +10,11 @@
 </head>
 <body>
 <h1>View Order</h1>
-<form:form method="post" action="confirmOrder" modelAttribute="order">
+
+
+
+
+
 	<table>
 	<tr>
 		<th>No.</th>
@@ -20,64 +24,65 @@
 	<c:forEach items="${order.itemList}" var="item" varStatus="status">
 		<tr>
 			<td align="center">${status.count}</td>
-			<td><form:hidden path="itemList[${status.index}].name"/>${item.name}</td>
-			<td><form:input path="itemList[${status.index}].quantity" value="${item.quantity}"/></td>
+			<td>${item.name}</td>
+			<td>${item.quantity}</td>
 		</tr>
 	</c:forEach>
 </table>
-</form:form>
+
 <br/>
-<form:form method="post" action="confirmOrder" modelAttribute="payment">
+
 <table>
 	<tr>
 		<td>Credit Card Number</td>
-		<td><form:input path="creditCardNumber" /></td>
+		<td>${payment.creditCardNumber}</td>
 	</tr>
 	<tr>
 		<td>Expiration Date</td>
-		<td><form:input path="expDate" /></td>
+		<td>${payment.expDate}</td>
+		
 	</tr>
 	<tr>
 		<td>CVV Code</td>
-		<td><form:input path="cvvCode" /></td>
+		<td>${payment.cvvCode}</td>
 	</tr>
 	<tr>
 		<td>Card Holder Name</td>
-		<td><form:input path="cardHolderName" /></td>
+		<td>${payment.cardHolderName}</td>
 	</tr>
 </table>
-</form:form>
+
 <br />
-<form:form method="post" action="confirmOrder" modelAttribute="shippingInfo">
+
 <table>
 	<tr>
 		<td>Name</td>
-		<td><form:input path="name" value="${shippingInfo.name}"/></td>
+		<td>${shippingInfo.name}</td>
 	</tr>
 	<tr>
 		<td>Address Line1</td>
-		<td><form:input path="addressLine1" value="${shippingInfo.addressLine1}"/></td>
+		<td>${shippingInfo.addressLine1}</td>
 	</tr>
 	<tr>
 		<td>Address Line2</td>
-		<td><form:input path="addressLine2" value="${shippingInfo.addressLine2}"/></td>
+		<td>${shippingInfo.addressLine2}</td>
 	</tr>
 	<tr>
 		<td>City</td>
-		<td><form:input path="city" value="${shippingInfo.city}"/></td>
+		<td>${shippingInfo.city}</td>
 	</tr>
 	<tr>
 		<td>State</td>
-		<td><form:input path="state" value="${shippingInfo.state}"/></td>
+		<td>${shippingInfo.state}</td>
 	</tr>
 	<tr>
 		<td>Zip</td>
-		<td><form:input path="zip" value="${shippingInfo.zip}"/></td>
+		<td>${shippingInfo.zip}</td>
 	</tr>
 </table>
 <input type="submit" value="Confirm" />
 	
-</form:form>
+
 
 </body>
 </html>
