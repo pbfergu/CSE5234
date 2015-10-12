@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -32,9 +31,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="/Purchase">Purchase</a></li>
-        <li><a href="/AboutUs">About</a></li>
-        <li><a href="/ContactUs">Contact</a></li>   
+        <li><a href="/Lab2/purchase">Purchase</a></li>
+        <li><a href="/Lab2/about-us">About</a></li>
+        <li><a href="/Lab2/contact-us">Contact</a></li>   
       </ul>
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
