@@ -3,10 +3,29 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Hongli Optical</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
+<div class="container">
+<div class="jumbotron">
 
+    <h1>Hongli Optical CO.
+        <small> From 2010</small>
+    </h1>
+    <p>Toronto based Hongli Optical is a leading online retailer of prescription eyewear.
+        Using the most current optical materials and the most up-to-date manufacturing processes our glasses are custom made and come directly from our factory to you. With no middlemen, no retail-space overhead, and practically no advertising budget (it's up to you, our satisfied customers to spread the word about Hongli Optical), we realized our dream of providing the best value eyewear in the world.
+    </p>
+</div>
+</div>
 </body>
 </html>
