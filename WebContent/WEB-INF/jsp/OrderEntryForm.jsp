@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%@include file="Header.jsp" %>
 <form:form method="post" action="purchase/submitItems" modelAttribute="order">
 	<table>
 	<tr>
@@ -18,7 +19,7 @@
 	<c:forEach items="${order.itemList}" var="item" varStatus="status">
 		<tr>
 			<td align="center">${status.count}</td>
-			<td><form:input path="itemList[${status.index}].name" value="${item.name}" readonly = "true"/></td>
+			<td><form:hidden path="itemList[${status.index}].name"/>${item.name}</td>
 			<td><form:input path="itemList[${status.index}].quantity" value="${item.quantity}"/></td>
 		</tr>
 	</c:forEach>

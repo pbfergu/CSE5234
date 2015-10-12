@@ -16,6 +16,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
+<%@include file="Header.jsp"%>
 <div class="container">
 <div class="jumbotron">
 
@@ -27,5 +28,6 @@
     </p>
 </div>
 </div>
+<%@include file="Footer.jsp"%>
 </body>
 </html>

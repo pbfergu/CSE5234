@@ -10,7 +10,11 @@
 </head>
 <body>
 <h1>View Order</h1>
-<form:form method="post" action="confirmOrder" modelAttribute="order">
+
+
+
+
+
 	<table>
 	<tr>
 		<th>No.</th>
@@ -20,15 +24,65 @@
 	<c:forEach items="${order.itemList}" var="item" varStatus="status">
 		<tr>
 			<td align="center">${status.count}</td>
-			<td><form:input path="itemList[${status.index}].name" value="${item.name}"/></td>
-			<td><form:input path="itemList[${status.index}].quantity" value="${item.quantity}"/></td>
+			<td>${item.name}</td>
+			<td>${item.quantity}</td>
 		</tr>
 	</c:forEach>
-</table>	
+</table>
+
 <br/>
-<input type="submit" value="Submit" />
+
+<table>
+	<tr>
+		<td>Credit Card Number</td>
+		<td>${payment.creditCardNumber}</td>
+	</tr>
+	<tr>
+		<td>Expiration Date</td>
+		<td>${payment.expDate}</td>
+		
+	</tr>
+	<tr>
+		<td>CVV Code</td>
+		<td>${payment.cvvCode}</td>
+	</tr>
+	<tr>
+		<td>Card Holder Name</td>
+		<td>${payment.cardHolderName}</td>
+	</tr>
+</table>
+
+<br />
+
+<table>
+	<tr>
+		<td>Name</td>
+		<td>${shippingInfo.name}</td>
+	</tr>
+	<tr>
+		<td>Address Line1</td>
+		<td>${shippingInfo.addressLine1}</td>
+	</tr>
+	<tr>
+		<td>Address Line2</td>
+		<td>${shippingInfo.addressLine2}</td>
+	</tr>
+	<tr>
+		<td>City</td>
+		<td>${shippingInfo.city}</td>
+	</tr>
+	<tr>
+		<td>State</td>
+		<td>${shippingInfo.state}</td>
+	</tr>
+	<tr>
+		<td>Zip</td>
+		<td>${shippingInfo.zip}</td>
+	</tr>
+</table>
+<input type="submit" value="Confirm" />
 	
-</form:form>
+
 
 </body>
 </html>

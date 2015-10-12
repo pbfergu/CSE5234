@@ -7,11 +7,19 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import edu.osu.cse5234.model.PaymentInfo;
+
 @Controller
 @RequestMapping("/")
 public class Homepage {
 	@RequestMapping(method = RequestMethod.GET)
-	public String viewPaymentEntryPage(HttpServletRequest request, HttpServletResponse response) {
+	public String viewHomePage(HttpServletRequest request, HttpServletResponse response) {
 		return "home";
+	}
+	
+	@RequestMapping(path = "/aboutus", method = RequestMethod.GET)
+	public String viewAboutUsPage(HttpServletRequest request, HttpServletResponse response) {
+		request.setAttribute("payment", new PaymentInfo());	
+		return "AboutUs";
 	}
 }

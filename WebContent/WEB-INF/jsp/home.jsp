@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<%@include file="Header.jsp"%>
 Hompage
-<%@ include file="footer.jsp"%>
+<%@ include file="Footer.jsp"%>
 </body>
 </html>

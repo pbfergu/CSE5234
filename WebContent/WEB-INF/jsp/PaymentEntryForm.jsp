@@ -19,13 +19,14 @@
 	<c:forEach items="${order.itemList}" var="item" varStatus="status">
 		<tr>
 			<td align="center">${status.count}</td>
-			<td><input value="${item.name}"/></td>
+			<td>${item.name}</td>
 			<td><input value="${item.quantity}"/></td>
 		</tr>
 	</c:forEach>
 </table>
 	<table>
-	
+		<br>
+		Please Input Your Payment Infomation
 		<tr>
 			<td>Credit Card Number</td>
 			<td><form:input path="creditCardNumber" /></td>
