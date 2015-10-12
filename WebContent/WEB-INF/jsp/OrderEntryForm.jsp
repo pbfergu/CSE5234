@@ -18,7 +18,7 @@
 	<c:forEach items="${order.itemList}" var="item" varStatus="status">
 		<tr>
 			<td align="center">${status.count}</td>
-			<td><form:input path="itemList[${status.index}].name" value="${item.name}"/></td>
+			<td><form:input path="itemList[${status.index}].name" value="${item.name}" readonly = "true"/></td>
 			<td><form:input path="itemList[${status.index}].quantity" value="${item.quantity}"/></td>
 		</tr>
 	</c:forEach>
