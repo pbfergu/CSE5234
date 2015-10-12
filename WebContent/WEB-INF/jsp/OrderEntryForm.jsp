@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%@include file="Header.jsp" %>
 <form:form method="post" action="purchase/submitItems" modelAttribute="order">
 	<table>
 	<tr>
