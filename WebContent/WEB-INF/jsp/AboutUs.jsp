@@ -27,6 +27,22 @@
         Using the most current optical materials and the most up-to-date manufacturing processes our glasses are custom made and come directly from our factory to you. With no middlemen, no retail-space overhead, and practically no advertising budget (it's up to you, our satisfied customers to spread the word about Hongli Optical), we realized our dream of providing the best value eyewear in the world.
     </p>
 </div>
+<div class="row">
+	a.	Products and Services offered
+	Take a look at home page of MyGolf web site for ideas!
+Feel free to borrow from stylesheets in the appendix
+</div>
+<div class="row">
+	<h2>
+	Developers
+	</h2>
+	<div class="col-sm-4">
+		<img class = "img-circle img-responsive" src="https://farm6.staticflickr.com/5717/21853418350_a8e8e7d304_q.jpg">
+        <br>
+        <p class="text-center">Hi, everybody! Here is Eric!</p>
+	</div>
+</div>
+
 </div>
 <%@include file="Footer.jsp"%>
 </body>
