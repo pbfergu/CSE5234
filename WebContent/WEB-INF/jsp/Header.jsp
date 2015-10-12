@@ -30,10 +30,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="/Lab2/">Home <span class="sr-only">(current)</span></a></li>
         <li><a href="/Lab2/purchase">Purchase</a></li>
-        <li><a href="/Lab2/about-us">About</a></li>
-        <li><a href="/Lab2/contact-us">Contact</a></li>   
+        <li><a href="/Lab2/aboutus">About</a></li>
+        <li><a href="/Lab2/contactus">Contact</a></li>   
       </ul>
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
