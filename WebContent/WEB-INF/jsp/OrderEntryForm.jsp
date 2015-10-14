@@ -28,6 +28,6 @@
 <input type="submit" value="Submit" />
 	
 </form:form>
-
+<%@include file="Footer.jsp"%>
 </body>
 </html>
