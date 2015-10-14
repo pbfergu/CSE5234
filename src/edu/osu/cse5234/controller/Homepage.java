@@ -19,7 +19,11 @@ public class Homepage {
 	
 	@RequestMapping(path = "/aboutus", method = RequestMethod.GET)
 	public String viewAboutUsPage(HttpServletRequest request, HttpServletResponse response) {
-		request.setAttribute("payment", new PaymentInfo());	
 		return "AboutUs";
+	}
+	
+	@RequestMapping(path = "/contactus", method = RequestMethod.GET)
+	public String viewContactUsPage(HttpServletRequest request, HttpServletResponse response) {
+		return "ContactUs";
 	}
 }
