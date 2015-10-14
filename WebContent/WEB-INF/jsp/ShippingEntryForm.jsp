@@ -16,27 +16,27 @@
 		Please Input Your Shipping Infomation
 		<tr>
 			<td>Name</td>
-			<td><form:input path="name" value="${shippingInfo.name}"/></td>
+			<td><form:input path="name" value="${shippingInfo.name}" required="required"/></td>
 		</tr>
 		<tr>
 			<td>Address Line1</td>
-			<td><form:input path="addressLine1" value="${shippingInfo.addressLine1}"/></td>
+			<td><form:input path="addressLine1" value="${shippingInfo.addressLine1}" required="required"/></td>
 		</tr>
 		<tr>
 			<td>Address Line2</td>
-			<td><form:input path="addressLine2" value="${shippingInfo.addressLine2}"/></td>
+			<td><form:input path="addressLine2" value="${shippingInfo.addressLine2}" required="required"/></td>
 		</tr>
 		<tr>
 			<td>City</td>
-			<td><form:input path="city" value="${shippingInfo.city}"/></td>
+			<td><form:input path="city" value="${shippingInfo.city}" required="required"/></td>
 		</tr>
 		<tr>
 			<td>State</td>
-			<td><form:input path="state" value="${shippingInfo.state}"/></td>
+			<td><form:input path="state" value="${shippingInfo.state}" required="required"/></td>
 		</tr>
 		<tr>
 			<td>Zip</td>
-			<td><form:input path="zip" value="${shippingInfo.zip}"/></td>
+			<td><form:input path="zip" value="${shippingInfo.zip}" required="required"/></td>
 		</tr>
 	</table>		
 <br/>
