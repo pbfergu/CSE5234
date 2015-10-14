@@ -22,18 +22,18 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="http://www.glasses.com/dyn-images/default/Round_Collection_Page2.jpg" alt="rayban">
+            <img src="http://www.glasses.com/dyn-images/default/Round_Collection_Page2.jpg" width="1200" alt="rayban">
         </div>
         <div class="item">
-            <img src="http://www.glasses.com/dyn-images/default/Wayfarer_Collection_Page.jpg"  alt="cartier">
-        </div>
-
-        <div class="item">
-            <img src="http://www.glasses.com/dyn-images/default/Translucent_Collection_Page.jpg" width="640" height="272" alt="me at my work">
+            <img src="http://www.glasses.com/dyn-images/default/Wayfarer_Collection_Page.jpg" width="1200"  alt="cartier">
         </div>
 
         <div class="item">
-            <img src="img_flower2.jpg" alt="Flower">
+            <img src="http://www.glasses.com/dyn-images/default/Translucent_Collection_Page.jpg" width="1200" alt="me at my work">
+        </div>
+
+        <div class="item">
+            <img src="http://www.glasses.com/dyn-images/default/wayfarer-collection-hero.jpg" width="1200" alt="Flower">
         </div>
     </div>
 
