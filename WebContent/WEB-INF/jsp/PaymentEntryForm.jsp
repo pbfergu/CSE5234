@@ -30,19 +30,19 @@
 		Please Input Your Payment Infomation
 		<tr>
 			<td>Credit Card Number</td>
-			<td><form:input path="creditCardNumber" /></td>
+			<td><form:input path="creditCardNumber" required="required"/></td>
 		</tr>
 		<tr>
 			<td>Expiration Date</td>
-			<td><form:input path="expDate" /></td>
+			<td><form:input path="expDate" required="required"/></td>
 		</tr>
 		<tr>
 			<td>CVV Code</td>
-			<td><form:input path="cvvCode" /></td>
+			<td><form:input path="cvvCode" required="required"/></td>
 		</tr>
 		<tr>
 			<td>Card Holder Name</td>
-			<td><form:input path="cardHolderName" /></td>
+			<td><form:input path="cardHolderName" required="required"/></td>
 		</tr>
 	</table>		
 <br/>
