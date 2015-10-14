@@ -7,7 +7,9 @@
 <title>Contact Us</title>
 </head>
 <body>
+<%@include file="Header.jsp"%>
 <h1>Contact Us</h1>
 <p>You can reach us by email at <a href="mailto:asdasdf@adsf.com">asdasdf@asdf.com</a></p>
+<%@include file="Footer.jsp"%>
 </body>
 </html>
