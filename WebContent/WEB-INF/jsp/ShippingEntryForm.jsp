@@ -9,7 +9,7 @@
 <title>Shipping Infomation</title>
 </head>
 <body>
-<body>
+<%@include file="Header.jsp"%>
 <form:form method="post" action="submitShipping" modelAttribute="shippingInfo">
 <table class="table">
 		<br>
@@ -43,6 +43,6 @@
 <input type="submit" value="Submit" />
 	
 </form:form>
-
+<%@include file="Footer.jsp"%>
 </body>
 </html>

@@ -9,6 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%@include file="Header.jsp"%>
 <form:form method="post" action="submitPayment" modelAttribute="payment">
 	<table class="table">
 	<tr>
@@ -48,5 +49,6 @@
 <input type="submit" value="Submit" />
 	
 </form:form>
+<%@include file="Footer.jsp"%>
 </body>
 </html>

@@ -9,6 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%@include file="Header.jsp"%>
 <h1>View Order</h1>
 
 
@@ -83,6 +84,6 @@
 <input type="submit" value="Confirm" />
 	
 
-
+<%@include file="Footer.jsp"%>
 </body>
 </html>

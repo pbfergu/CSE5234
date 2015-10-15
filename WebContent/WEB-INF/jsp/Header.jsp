@@ -9,8 +9,10 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 <title>Insert title here</title>
 </head>
 <body>
@@ -24,16 +26,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-brand" href="#">Hongli Optical</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="/Lab2/">Home</a></li>
-        <li><a href="/Lab2/purchase">Purchase</a></li>
-        <li><a href="/Lab2/aboutus">About</a></li>
-        <li><a href="/Lab2/contactus">Contact</a></li>   
+        <li id="headerLink1" class="headerLink active"><a href="/Lab2/">Home</a></li>
+        <li id="headerLink2" class="headerLink"><a href="/Lab2/purchase">Purchase</a></li>
+        <li id="headerLink3" class="headerLink"><a href="/Lab2/aboutus">About</a></li>
+        <li id="headerLink4" class="headerLink"><a href="/Lab2/contactus">Contact</a></li>   
       </ul>
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
@@ -44,5 +46,22 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<script>
+$(function(){
+console.log(window.location.pathname);
+var url = window.location.pathname;
+$(".headerLink").removeClass("active");
+if(url == "/Lab2/"){
+	$("#headerLink1").addClass("active")
+} else if(url == "/Lab2/purchase"){
+	$("#headerLink2").addClass("active")
+} else if(url == "/Lab2/aboutus"){
+	$("#headerLink3").addClass("active")
+} else if(url == "/Lab2/contactus"){
+	$("#headerLink4").addClass("active")
+}
+
+});
+</script>
 </body>
 </html>
