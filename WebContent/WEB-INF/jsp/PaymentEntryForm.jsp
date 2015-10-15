@@ -10,7 +10,7 @@
 </head>
 <body>
 <form:form method="post" action="submitPayment" modelAttribute="payment">
-	<table>
+	<table class="table">
 	<tr>
 		<th>No.</th>
 		<th>Name</th>
@@ -24,7 +24,7 @@
 		</tr>
 	</c:forEach>
 </table>
-	<table>
+	<table class="table">
 		<br>
 		Please Input Your Payment Infomation
 		<tr>

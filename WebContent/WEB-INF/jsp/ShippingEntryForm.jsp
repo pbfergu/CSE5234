@@ -11,7 +11,7 @@
 <body>
 <body>
 <form:form method="post" action="submitShipping" modelAttribute="shippingInfo">
-<table>
+<table class="table">
 		<br>
 		Please Input Your Shipping Infomation
 		<tr>

@@ -10,7 +10,7 @@
 <body>
 <%@include file="Header.jsp" %>
 <form:form method="post" action="purchase/submitItems" modelAttribute="order">
-	<table>
+	<table class="table">
 	<tr>
 		<th>No.</th>
 		<th>Name</th>

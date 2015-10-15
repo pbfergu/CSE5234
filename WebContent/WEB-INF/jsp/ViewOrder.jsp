@@ -15,7 +15,7 @@
 
 
 
-	<table>
+	<table class="table">
 	<tr>
 		<th>No.</th>
 		<th>Name</th>
@@ -32,7 +32,7 @@
 
 <br/>
 
-<table>
+<table class="table">
 	<tr>
 		<td>Credit Card Number</td>
 		<td>${payment.creditCardNumber}</td>
@@ -54,7 +54,7 @@
 
 <br />
 
-<table>
+<table class="table">
 	<tr>
 		<td>Name</td>
 		<td>${shippingInfo.name}</td>
