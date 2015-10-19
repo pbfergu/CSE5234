@@ -1,8 +1,6 @@
 package edu.osu.cse5234.controller;
 
-import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,6 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import edu.osu.cse5234.business.InventoryManagementService;
 import edu.osu.cse5234.model.Item;
 import edu.osu.cse5234.model.Order;
 import edu.osu.cse5234.model.PaymentInfo;
@@ -25,34 +24,10 @@ public class Purchase {
 	public String viewOrderEntryPage(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		Order order = new Order();
 		
-		List<Item> itemList = new ArrayList<Item>();
+		InventoryManagementService ims = new InventoryManagementService(); 
 		
-		Item item1 = new Item();
-		item1.setName("Ray Ban");
-		item1.setQuantity("0");
-		itemList.add(item1);
 		
-		Item item2 = new Item();
-		item2.setName("Levis");
-		item2.setQuantity("0");
-		itemList.add(item2);
-		
-		Item item3 = new Item();
-		item3.setName("Gucci");
-		item3.setQuantity("0");
-		itemList.add(item3);
-		
-		Item item4 = new Item();
-		item4.setName("Prada");
-		item4.setQuantity("0");
-		itemList.add(item4);
-		
-		Item item5 = new Item();
-		item5.setName("Oakley");
-		item5.setQuantity("0");
-		itemList.add(item5);
-		
-		order.setItemList(itemList);
+		order.setItemList(ims.getAvailableItems().getItemList());
 		request.setAttribute("order", order);
 		return "OrderEntryForm";
 	}
