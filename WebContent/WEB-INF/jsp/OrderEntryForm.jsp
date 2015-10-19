@@ -9,6 +9,8 @@
 </head>
 <body>
 <%@include file="Header.jsp" %>
+<div class="container">
+<div class="row">
 <form:form method="post" action="purchase/submitItems" modelAttribute="order">
 	<table class="table">
 	<tr>
@@ -28,6 +30,8 @@
 <input type="submit" value="Submit" />
 	
 </form:form>
+</div>
+</div>
 <%@include file="Footer.jsp"%>
 </body>
 </html>
