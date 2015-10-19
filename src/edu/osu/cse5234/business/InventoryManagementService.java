@@ -8,7 +8,7 @@ import edu.osu.cse5234.model.Item;
 
 public class InventoryManagementService {
 	
-	private Inventory inventory;
+	private Inventory inventory = new Inventory();
 	
 	public InventoryManagementService() {
 		List<Item> itemList = new ArrayList<Item>();
