@@ -32,19 +32,19 @@
 	Developers
 	</h2>
 	<div class="col-sm-4">
-		<img class = "img-circle img-responsive" src="https://farm6.staticflickr.com/5717/21853418350_a8e8e7d304_q.jpg">
+		<img class = "img-circle img-responsive" src="https://farm6.staticflickr.com/5717/21853418350_a8e8e7d304_q.jpg" >
         <br>
-        <p class="text-center">Shuang Li</p>
+        <p class="text-center">CEO: Shuang Li</p>
 	</div>
 	<div class="col-sm-4">
 		<img class = "img-circle img-responsive" src="/Lab2/images/peter.png">
         <br>
-        <p class="text-center">Peter Ferguson</p>
+        <p class="text-center">CTO: Peter Ferguson</p>
 	</div>
 	<div class="col-sm-4">
-		<img class = "img-circle img-responsive" src="/Lab2/images/Zicong.jpg">
+		<img class = "img-circle img-responsive" src="/Lab2/images/Zicong.jpg" style="width:150px;height:150px;">
         <br>
-        <p class="text-center">Zicong Zheng</p>
+        <p class="text-center">CFO: Zicong Zheng</p>
 	</div>
 </div>
 

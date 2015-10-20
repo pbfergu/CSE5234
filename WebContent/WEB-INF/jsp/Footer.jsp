@@ -14,11 +14,11 @@
                     <h4 style = "color:#4491E4">Follow Us</h4>
                     <!--   <ul class="flickr clearfix"></ul>  -->
                     <ul class="menu-widget">
-                        <li><img class="mim-bottom" src="/file/images/fba.png" /><img class="mim-top" src="/file/images/fb.png" /><a class="follow-widget">Facebook</a></li>
-                        <li><img class="mim-bottom" src="/file/images/fla.png" /><img class="mim-top" src="/file/images/fl.png" /><a class="follow-widget">Flickr</a></li>
-                        <li><img class="mim-bottom" src="/file/images/twa.png" /><img class="mim-top" src="/file/images/tw.png" /><a class="follow-widget">Twitter</a></li>
-                        <li><img class="mim-bottom" src="/file/images/bla.png" /><img class="mim-top" src="/file/images/bl.png" /><a class="follow-widget">Blogger</a></li>
-                        <li><img class="mim-bottom" src="/file/images/dla.png" /><img class="mim-top" src="/file/images/dl.png" /><a class="follow-widget">Delicious</a></li>
+                        <li><img class="mim-top" src="/Lab2/images/fb.png" /><a class="follow-widget">Facebook</a></li>
+                        <li><img class="mim-top" src="/Lab2/images/fl.png" /><a class="follow-widget">Flickr</a></li>
+                        <li><img class="mim-top" src="/Lab2/images/tw.png" /><a class="follow-widget">Twitter</a></li>
+                        <li><img class="mim-top" src="/Lab2/images/bl.png" /><a class="follow-widget">Blogger</a></li>
+                        <li><img class="mim-top" src="/Lab2/images/dl.png" /><a class="follow-widget">Delicious</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 column ui-sortable" style="">
