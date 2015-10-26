@@ -54,7 +54,7 @@
 </table>
 
 <br />
-
+<form:form method="post" action="confirmOrder" modelAttribute="shippingInfo">
 <table class="table">
 	<tr>
 		<td>Name</td>
@@ -82,6 +82,7 @@
 	</tr>
 </table>
 <input type="submit" value="Confirm" />
+</form:form>
 	
 
 <%@include file="Footer.jsp"%>

@@ -32,10 +32,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li id="headerLink1" class="headerLink active"><a href="/Lab2/">Home</a></li>
-        <li id="headerLink2" class="headerLink"><a href="/Lab2/purchase">Purchase</a></li>
-        <li id="headerLink3" class="headerLink"><a href="/Lab2/aboutus">About</a></li>
-        <li id="headerLink4" class="headerLink"><a href="/Lab2/contactus">Contact</a></li>   
+        <li id="headerLink1" class="headerLink active"><a href="/CSE5234/">Home</a></li>
+        <li id="headerLink2" class="headerLink"><a href="/CSE5234/purchase">Purchase</a></li>
+        <li id="headerLink3" class="headerLink"><a href="/CSE5234/aboutus">About</a></li>
+        <li id="headerLink4" class="headerLink"><a href="/CSE5234/contactus">Contact</a></li>   
       </ul>
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
@@ -53,11 +53,11 @@ var url = window.location.pathname;
 $(".headerLink").removeClass("active");
 if(url == "/Lab2/"){
 	$("#headerLink1").addClass("active")
-} else if(url == "/Lab2/purchase"){
+} else if(url == "/CSE5234/purchase"){
 	$("#headerLink2").addClass("active")
-} else if(url == "/Lab2/aboutus"){
+} else if(url == "/CSE5234/aboutus"){
 	$("#headerLink3").addClass("active")
-} else if(url == "/Lab2/contactus"){
+} else if(url == "/CSE5234/contactus"){
 	$("#headerLink4").addClass("active")
 }
 

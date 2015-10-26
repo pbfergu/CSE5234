@@ -23,7 +23,7 @@
 		<tr>
 			<td align="center">${status.count}</td>
 			<td><form:hidden path="itemList[${status.index}].name"/>${item.name}</td>
-			<td><form:input path="itemList[${status.index}].quantity" value= 0/></td>
+			<td><form:input path="itemList[${status.index}].quantity" value="0"/></td>
 		</tr>
 	</c:forEach>
 </table>	

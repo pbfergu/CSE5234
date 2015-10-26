@@ -23,8 +23,6 @@ public class Purchase {
 	@RequestMapping(method = RequestMethod.GET)
 	public String viewOrderEntryPage(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		Order order = new Order();
-		
-		
 		order.setItemList(ServiceLocator.getInventoryService().getAvailableInventory().getItemList());
 		request.setAttribute("order", order);
 		return "OrderEntryForm";
