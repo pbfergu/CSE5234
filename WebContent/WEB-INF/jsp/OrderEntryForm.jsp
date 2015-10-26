@@ -9,6 +9,7 @@
 </head>
 <body>
 <%@include file="Header.jsp" %>
+<c:out value="${message}" />
 <div class="container">
 <div class="row">
 <form:form method="post" action="purchase/submitItems" modelAttribute="order">
@@ -22,7 +23,7 @@
 		<tr>
 			<td align="center">${status.count}</td>
 			<td><form:hidden path="itemList[${status.index}].name"/>${item.name}</td>
-			<td><form:input path="itemList[${status.index}].quantity" value="${item.quantity}"/></td>
+			<td><form:input path="itemList[${status.index}].quantity" value= 0/></td>
 		</tr>
 	</c:forEach>
 </table>	

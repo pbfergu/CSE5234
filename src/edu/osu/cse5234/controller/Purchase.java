@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import edu.osu.cse5234.business.InventoryManagementService;
-import edu.osu.cse5234.model.Item;
+import edu.osu.cse5234.business.view.Item;
 import edu.osu.cse5234.model.Order;
 import edu.osu.cse5234.model.PaymentInfo;
 import edu.osu.cse5234.model.ShippingInfo;
+import edu.osu.cse5234.util.ServiceLocator;
 
 @Controller
 @RequestMapping("/purchase")
@@ -24,22 +24,29 @@ public class Purchase {
 	public String viewOrderEntryPage(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		Order order = new Order();
 		
-		InventoryManagementService ims = new InventoryManagementService(); 
 		
-		
-		order.setItemList(ims.getAvailableItems().getItemList());
+		order.setItemList(ServiceLocator.getInventoryService().getAvailableInventory().getItemList());
 		request.setAttribute("order", order);
 		return "OrderEntryForm";
 	}
 
 	@RequestMapping(path = "/submitItems", method = RequestMethod.POST)
-	public String submitItems(@ModelAttribute("order") Order order, HttpServletRequest request) {
+	public String submitItems(@ModelAttribute("order") Order order, HttpServletRequest request){
 		Iterator<Item> it = order.getItemList().iterator();
 		while(it.hasNext()){
 			Item item = it.next();
 			if(item.getQuantity().equals("0"))
 				it.remove();
 		}
+		
+		//Object#3&#4 (5)
+		Boolean isvalid = ServiceLocator.getOrderProcessingService().validateItemAvailability(order);
+		if(!isvalid){
+			request.setAttribute("invalidMessage", "Please resubmit item quantities");
+			//request.getRequestDispatcher("OrderEntryForm").forward(request,response);
+			return "OrderEntryForm";
+		}
+		
 		request.getSession().setAttribute("order", order);
 		return "redirect:/purchase/paymentEntry";
 	}
@@ -83,6 +90,7 @@ public class Purchase {
 	
 	@RequestMapping(path = "/Confirmation", method = RequestMethod.GET)
 	public String viewConfirmation(HttpServletRequest request, HttpServletResponse response) {
+		request.setAttribute("confirmationCode", ServiceLocator.getOrderProcessingService().processOrder((Order)request.getSession().getAttribute("order")));
 		return "Confirmation";
 	}
 }
